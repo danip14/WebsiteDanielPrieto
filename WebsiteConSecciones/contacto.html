@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consolas de Nintendo</title>
+    <link rel="stylesheet" href="assets\css\style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1><a href="index.html"> ConsolasDeNintendo.com</a></h1>
+      </div>
+
+      <div id="nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Consolas.html">Consolas</a></li>
+          <li>
+            <a href="otras_Unidades_de_Hardware.html"
+              >Otras Unidades de Hardware</a
+            >
+          </li>
+          <li>
+            <a href="unidades_No_Publicadas.html">Unidades No Publicadas</a>
+          </li>
+          <li><a href="enlaces_Externos.html">Enlaces Externos</a></li>
+          <li style="float: right">
+            <a class="active" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="body">
+        <h2>Contactanos</h2>
+        <hr />
+
+        <div id="contact_form">
+          <form style="margin-top: 30px">
+            <label for="name">Nombre:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ejemplo: María Fernandez"
+              required
+            /><br /><br />
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ejemplo: alguien@mail.com"
+              required
+            /><br /><br />
+            <label for="pNumber">Telefono:</label><br />
+            <input
+              type="tel"
+              id="pNumber"
+              name="pNumber"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              required
+            /><br />
+            <small style="color: rgb(145, 145, 145)"
+              >formato: 1111-111-1111</small
+            ><br /><br />
+            <label for="review">Mensaje:</label><br /><br />
+            <textarea
+              id="review"
+              name="review"
+              rows="4"
+              cols="50"
+              required
+            ></textarea
+            ><br />
+            <div id="submitReset">
+              <input
+                type="submit"
+                value="ENVIAR"
+                style="background-color: rgb(255, 78, 78)"
+              />
+              <input
+                type="reset"
+                value="VACIAR"
+                style="background-color: rgb(255, 255, 255)"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="footer">
+        <p>
+          &copy; 2023. Todos los derechos reservados. <br />
+          Maracaibo Venezuela
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
